@@ -8,3 +8,6 @@
 *~
 *#*#
 TAGS
+*.code-workspace
+*/_obsolete
+_obsolete
