@@ -889,9 +889,9 @@ dt {
   background-image: image-url('homepage-background-small.jpg');
   background-repeat: no-repeat;
   background-position: center middle;
-  background-size: contain;
+  background-size: cover;
   color: $color_white;
-  padding: 2em 0 5em;
+  padding: 9em 0 !important;
   position: relative;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     padding: 5em 0 8em;
