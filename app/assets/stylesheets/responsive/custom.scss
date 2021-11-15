@@ -885,8 +885,8 @@ dt {
   background-color: $color_neutral_dark;
   background-image: image-url('homepage-background-small.jpg');
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  background-position: left top;
+  background-size: contain;
   color: $color_white;
   padding: 2em 0 5em;
   position: relative;
@@ -942,4 +942,14 @@ dt {
 // User menu
 .pro-pill {
   background-color: desaturate(darken($color_secondary, 10%), 5%);
+}
+
+// pax starts here
+
+#country-message {
+  display: none !important;
+}
+
+#project-banner {
+  display: flex;
 }
