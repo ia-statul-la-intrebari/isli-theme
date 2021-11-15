@@ -52,4 +52,5 @@ $error-color: $color_red;
 $action-color: $color_orange;
 
 $banner_inner_bg: $color_primary;
-$topnav_bg: darken($color_primary, 10%);
+// $topnav_bg: darken($color_primary, 10%);
+$topnav_bg: linear-gradient(45deg, #9fcc65, #19b8dd, #9fcc65, #19b8dd); 
