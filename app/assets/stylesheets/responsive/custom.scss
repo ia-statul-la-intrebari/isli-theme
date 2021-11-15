@@ -576,7 +576,8 @@ p.locale-list-trigger {
 
 /* Footer */
 #footer {
-  background-color: $color_neutral_dark;
+  /* background-color: $color_neutral_dark; */
+  background-color: $color_blue;
   color: darken($color_neutral_light, 10%);
   a {
     text-decoration: none;
@@ -883,10 +884,11 @@ dt {
 }
 
 .homepage-hero {
-  background-color: $color_neutral_dark;
+  /* background-color: $color_neutral_dark; */
+  background-color: black;
   background-image: image-url('homepage-background-small.jpg');
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: center middle;
   background-size: contain;
   color: $color_white;
   padding: 2em 0 5em;
@@ -972,13 +974,28 @@ width: 100%; margin: 0 auto;
 }
 #project-banner h3#proj-title{
   font-size: 1.35em;
+  color: $color_green;
 }
 #project-banner h5#proj-tagline{
   font-size: 1.2em;
   font-weight: normal;
+  color: $color_blue;
 }
 #project-banner #sponsor + div {
     padding: 1ex 0;
 }
 
- 
+#banner_content a {
+  color: $color_blue;
+}
+#front-partners h5 {
+  text-align: center;
+    color: $color_green;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+#front-partners {width: 40em; margin: 1ex auto;}
+#front-partners #fp-partners-logos img {
+    max-height: 60px ;
+}
