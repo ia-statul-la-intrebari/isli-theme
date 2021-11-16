@@ -1026,3 +1026,8 @@ width: 100%; margin: 0 auto;
     line-height: 1.3;
     margin-top: 2ex;
   }
+
+  .funding_disclaimer a {
+    text-decoration: none;
+    color: $color_blue; font-weight: bold;
+  }
