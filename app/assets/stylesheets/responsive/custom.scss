@@ -287,6 +287,7 @@ a.link_button_green_large {
 .topnav {
   // background-color: $topnav_bg;
   background: $topnav_bg;
+  border-bottom: 2px solid $color_yellow;
   @media( min-width: $main_menu-mobile_menu_cutoff ) {
     box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.1);
   }
@@ -333,12 +334,16 @@ a.link_button_green_large {
 }
 
 #navigation_search_button{
-  background-color: $color_white;
+  /* background-color: $color_white; */
+  background-color: $color_green;
   border: none;
   transition: all 0.3s ease-out;
   color: $color_primary;
   border-radius: 0;
   font-size: inherit;
+}
+#navigation_search_form button {
+  background-color: $color_green;
 }
 
 .greeting {
@@ -577,15 +582,15 @@ p.locale-list-trigger {
 /* Footer */
 #footer {
   /* background-color: $color_neutral_dark; */
-  background-color: $color_blue;
-  color: darken($color_neutral_light, 10%);
+  /* background-color: $color_blue; */
+  /* color: darken($color_neutral_light, 10%); */
   a {
     text-decoration: none;
-    color: $color_white;
+    /* color: $color_white; */
     &:hover,
     &:active,
     &:focus {
-      color: lighten($color_primary, 10%);
+      /* color: lighten($color_primary, 10%); */
       text-decoration: underline;
     }
   }
@@ -593,7 +598,7 @@ p.locale-list-trigger {
 
 .footer__about {
   h2 {
-    color: $color_white;
+    /* color: $color_white; */
   }
 }
 
@@ -953,6 +958,11 @@ dt {
 #country-message {
   display: none !important;
 }
+  #banner_inner  {
+    border-top:1px solid #ddd; 
+    box-shadow: -1ex 0 1em rgba(0,0,0,.1);   
+    background: linear-gradient(lightyellow, transparent)
+}
 
 #fp-partners-logos, 
 #project-banner {
@@ -966,9 +976,8 @@ dt {
 #project-banner  { 
 max-width: 64em !important; 
 width: 100%; margin: 0 auto;
-
 }
- #project-banner h3#proj-title,
+#project-banner h3#proj-title,
 #project-banner h5#proj-tagline{
     margin: 0;
 }
@@ -977,9 +986,9 @@ width: 100%; margin: 0 auto;
   color: $color_green;
 }
 #project-banner h5#proj-tagline{
-  font-size: 1.2em;
+  font-size: 1.15em;
   font-weight: normal;
-  color: $color_blue;
+  color: $color_black;
 }
 #project-banner #sponsor + div {
     padding: 1ex 0;
@@ -990,12 +999,21 @@ width: 100%; margin: 0 auto;
 }
 #front-partners h5 {
   text-align: center;
-    color: $color_green;
+  color: $color_green;
   font-size: 1.1em;
   font-weight: normal;
 }
-
-#front-partners {width: 40em; margin: 1ex auto;}
+ #front-partners {width: 40em; margin:2.5em auto 1em auto;  padding-top: 1.5em; border-top: 1px solid #ddd}
 #front-partners #fp-partners-logos img {
-    max-height: 60px ;
+    max-height: 50px ;
+}
+
+.homepage-how-it-works__hiw-content .steps__step-box {
+    background-color: $color_yellow; 
+    padding: 1.5em;
+    border-radius: 1ex;
+}
+.homepage-how-it-works__hiw-content .steps__step-box p {
+    font-size: 1.2em;
+    line-height:1.4;
 }
