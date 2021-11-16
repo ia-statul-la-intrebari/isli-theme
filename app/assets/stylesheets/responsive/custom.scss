@@ -891,7 +891,7 @@ dt {
 
 .homepage-hero {
   /* background-color: $color_neutral_dark; */
-  background-color: black;
+  background-color: $color_blue;
   background-image: image-url('homepage-background-small.jpg');
   background-repeat: no-repeat;
   background-position: center middle;
@@ -901,7 +901,7 @@ dt {
   position: relative;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     padding: 5em 0 8em;
-    background-image: image-url('homepage-background.jpg');
+    background-image: image-url('homepage-background.png');
   }
 
   a {
