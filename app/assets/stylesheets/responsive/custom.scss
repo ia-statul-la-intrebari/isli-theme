@@ -314,9 +314,11 @@ a.link_button_green_large {
   border-bottom: none;
   a {
     @extend %menu-item;
-    color: transparentize($color_white, 0.2);
+    text-shadow: 1px 1px 2px rgba(0,0,0,.2); 
+    color: white;
     @media( min-width: $main_menu-mobile_menu_cutoff ) {
-      padding: 0.875em 1em;
+    font-size: 1.1em;
+    padding:0.75em 1em; 
     }
   }
 
@@ -334,15 +336,14 @@ a.link_button_green_large {
 }
 
 #navigation_search_button{
-  /* background-color: $color_white; */
-  background-color: $color_green;
+  background-color: $color_white;
   border: none;
   transition: all 0.3s ease-out;
   color: $color_primary;
   border-radius: 0;
   font-size: inherit;
 }
-#navigation_search_form button {
+#navigation_search button[type="submit"] {
   background-color: $color_green;
 }
 
@@ -1017,3 +1018,4 @@ width: 100%; margin: 0 auto;
     font-size: 1.2em;
     line-height:1.4;
 }
+.topnav a {}
