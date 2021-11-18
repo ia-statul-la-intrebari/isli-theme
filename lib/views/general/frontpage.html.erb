@@ -1,0 +1,20 @@
+<% cache_if_caching_fragments("frontpage-#{@locale}", :expires_in => 5.minutes) do %>
+  <%= render :partial => "frontpage_how_it_works" %>
+
+  <div id="frontpage_examples" class="frontpage_examples">
+    <%= render :partial => "frontpage_bodies_list" %>
+    <%= render :partial => "frontpage_requests_list" %>
+  </div>
+ 
+<% end %>
+<div id="front-partners">
+  <h5>Proiect derulat de:</h5>
+  <div id="fp-partners-logos">
+    <a href="http://sar.org.ro/" target="_blank"><img src="/assets/images/logos/SAR Societatea Academica Romania.png" alt="Societatea Academica din Romania"></a>
+    <a href="http://actfortomorrow.ro/" target="_blank"><img src="/assets/images/logos/act for tomorrow.png" alt="act for tomorrow"></a>
+    <a href="https://www.velnett.no/" target="_blank"><img src="/assets/images/logos/Vellenes Fellesorganisasjon.png" alt="Vellenes Fellesorganisasjon"></a>
+  </div>
+  <div class="funding_disclaimer">
+    Proiectul este derulat de <a rel="nofollow" href="http://sar.org.ro/" target="_blank">Societatea Academică din România</a>, în parteneriat cu <a rel="nofollow" href="http://actfortomorrow.ro/" target="_blank">Asociația Act For Tomorrow</a> și <a rel="nofollow" href="https://www.velnett.no/" target="_blank">Vellenes Fellesorganisasjon</a> și beneficiază de o finanțare în valoare de 249.989 euro, prin programul <a rel="nofollow" href="http://www.activecitizensfund.ro" target="_blank">Active Citizens Fund România</a> – finanțat de Islanda, Liechtenstein și Norvegia prin <a rel="nofollow" href="http://www.eeagrants.org" target="_blank">Granturile SEE 2014-2021</a>. Conținutul acestui website nu reprezintă în mod necesar poziția oficială a Granturilor SEE și Norvegiene 2014-2021; pentru mai multe informații accesați <a rel="nofollow" href="http://www.eeagrants.org">www.eeagrants.org</a>. Informații despre Active Citizens Fund România sunt disponibile la <a rel="nofollow" href="http://www.activecitizensfund.ro">www.activecitizensfund.ro</a>. <!-- x -->
+   </div>
+</div>
