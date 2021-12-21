@@ -1,4 +1,4 @@
-<% @title = "Your privacy" %>
+<% @title = "Confidențialitate" %>
 
 <%= render :partial => 'sidebar' %>
 
@@ -6,81 +6,49 @@
   <h1 id="privacy"><%= @title %> <a href="#privacy">#</a></h1>
   <dl>
 
-    <dt id="email_address">Who gets to see my email address? <a href="#email_address">#</a> </dt>
+    <dt id="email_address">Cine poate vedea adresa mea de e-mail? <a href="#email_address">#</a> </dt>
 
-    <dd><p>We will not disclose your email address to anyone unless we are obliged to by law,
-        or you ask us to. This includes the public authority that you are sending a
-        request to.  They only get to see an email address
-        @<%= AlaveteliConfiguration::incoming_email_domain %> which is specific to that request.  </p>
-      <p>If you send a message to another user on the site, then it will reveal your
-        email address to them. You will be told that this is going to happen.</p>
+    <dd><p>Nu vom dezvălui adresa ta de e-mail nimănui, decât dacă suntem obligați prin lege sau ne soliciți tu. Aceasta include autoritatea publică căreia îi trimiți o solicitare. Ei ajung să vadă doar o adresă de e-mail 
+        @<%= AlaveteliConfiguration::incoming_email_domain %> care este specifică acelei solicitări.</p>
+      <p>Dacă trimiți un mesaj unui alt utilizator de pe site, acesta va putea vedea adresa dvs. de e-mail. Vei fi informat că acest lucru se va întâmpla.</p>
     </dd>
 
-    <dt id="nasty_spam">Will you send nasty, brutish spam to my email address? <a href="#nasty_spam">#</a> </dt>
-    <dd>Nope. After you sign up to <%= site_name %> we will only send you emails
-      relating to a request you made, an email alert that you have signed up for,
-      or for other reasons that you specifically authorise. We will never give or
-      sell your email addresses to anyone else, unless we are obliged to by law, or
-      you ask us to.
+    <dt id="nasty_spam">Imi veți trimite spam pe adresa mea de e-mail?<a href="#nasty_spam">#</a> </dt>
+    <dd>Nu. După ce te înscrii pe  <%= site_name %>, iti vom trimite doar e-mailuri referitoare la o solicitarile facute, o alertă prin e-mail pentru alte situatii pe care le autorizați în mod special. Nu vom oferi sau vinde niciodată adresele tale de e-mail nimănui, cu excepția cazului în care suntem obligați prin lege sau ne ceri tu.
     </dd>
 
-    <dt id="public_request">Why will my name and my request appear publicly on the site? <a href="#public_request">#</a> </dt>
+    <dt id="public_request">De ce numele meu și cererea mea vor apărea public pe site? <a href="#public_request">#</a> </dt>
 
     <dd>
-      <p>We publish your request on the Internet so that anybody can read it and
-        make use of the information that you have found. We do not normally delete
-        requests (<a href="#delete_requests">more details</a>).
+      <p>Publicăm cererea ta pe Internet, astfel încât oricine să o poată citi și să folosească informațiile pe care le-ai găsit. În mod normal, nu ștergem solicitările. (<a href="#delete_requests">vezi șî</a>).
       </p>
       <p>
-        Your name is tangled up with your request, so has to be published as well.
-        It is only fair, as we're going to publish the name of the civil servant who
-        writes the response to your request.  Using your real name also helps people
-        get in touch with you to assist you with your research or to campaign with you.
+       Numele tău este asociat cu solicitarea ta, așa că trebuie publicat și el. Este corect, deoarece vom publica numele funcționarului public care scrie răspunsul la cererea ta. Folosirea numelui tău real ajută, de asemenea, oamenii să ia legătura cu tine pentru a te ajuta cu cercetarea sau pentru a face campanie impreuna cu tine.
       </p>
-      <p>By law, you must use your real name for the request to be a valid Freedom of
-        Information request. See the next question for alternatives if you do not want
-        to publish your full name.
+      <p>Prin lege, trebuie să folosesti numele tau real pentru ca cererea să fie o cerere valabilă. Consulta următoarea întrebare pentru alternative, dacă nu doresti ca numele complet să fie public.
       </p>
     </dd>
 
-    <dt id="real_name">Can I make an FOI request using a pseudonym? <a href="#real_name">#</a> </dt>
+    <dt id="real_name">Pot face o solicitare FOI folosind un pseudonim? <a href="#real_name">#</a> </dt>
 
 
     <dd>
-      <p>Technically, you must use your real name for your request to be a valid Freedom of Information request in UK law. See this
-        <a href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/detailed_specialist_guides/name_of_applicant_fop083_v1.pdf">guidance from the Information Commissioner</a> (January 2009).
+      <p>Din punct de vedere tehnic, trebuie să utilizezi numele tau real pentru ca cererea să fie o cerere valabilă, conform legii.
       </p>
 
-      <p>However, the same guidance also says it is good practice for the public
-        authority to still consider a request made using an obvious pseudonym.
-        You should refer to this if a public authority refuses a request because you
-        used a pseudonym.</p>
+      
 
-      <p>Be careful though, even if the authority follows this good practice, the
-        pseudonym will probably make it impossible for you to complain to the
-        Information Commissioner later about the handling of your request.
-      </p>
-
-      <p>There are several good alternatives to using a pseudonym.</p>
+      <p>Există mai multe alternative bune pentru utilizarea unui pseudonim.</p>
 
       <ul>
-        <li>Use a different form of your name. The guidance says
-          that "Mr Arthur Thomas Roberts" can make a valid request as "Arthur Roberts",
-          "A. T. Roberts", or "Mr Roberts", but <strong>not</strong> as "Arthur" or "A.T.R.".
-        </li>
-        <li>Women may use their maiden name.</li>
-        <li>In most cases, you may use any name by which you are "widely known and/or
-          is regularly used".</li>
-        <li>Use the name of an organisation, the name of a company, the trading name of
-            a company, or the trading name of a sole trader.</li>
-        <li>Ask someone else to make the request on your behalf.</li>
-        <li>You may, if you are really stuck, ask us to make the request on
-          your behalf. Please <a href="<%= help_contact_path %>">contact us</a> with
-          a good reason why you cannot make the request yourself and cannot
-          ask a friend to. We don't have the resources to do this for everyone.</li>
+  <li>Poti utiliza o formă diferită a numelui. De exemplu, daca numele tau este Andrei Ioan Popescu, pentru ca cererea sa fie valida, te poti semna ca Andrei Popescu, A.I. Popescu, Popescu, dar NU Andrei sau Ioan sau A.I.P.</li>
+<li>Poti utiliza numele unei organizații, numele unei companii, numele comercial al unei companii sau numele comercial al unui comerciant unic.</li>
+<li>Cere altcuiva să facă cererea în numele tau.</li>
+<li>Poți, dacă esti într-adevăr fara solutii, să ne ceri să facem cererea în numele tau. Te rugăm să ne contactezi cu un motiv întemeiat pentru care nu poți face singur solicitarea și nu poți cere unui prieten sa te ajute. Nu avem resursele necesare pentru a face acest demers pentru toată lumea.</li>
+
       </ul>
 
-      <p>Please do not try to impersonate someone else.</p>
+      <p>Te rugăm să nu încerci să uzurpezi identitatea altcuiva.</p>
 
     </dd>
 
