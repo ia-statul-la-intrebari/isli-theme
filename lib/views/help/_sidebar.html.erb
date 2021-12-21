@@ -12,10 +12,11 @@
   <% if feature_enabled?(:alaveteli_pro) %>
     <li><%= link_to_unless_current "Pro", help_pro_path %></li>
   <% end %>
+    <li><%= link_to_unless_current "Contact", help_contact_path %></li>
+
 </ul>
 
-<!-- <h2 id="contact" class="contact">Contact us</h2>
-<p>If your question isn't answered here, or you just wanted to let us know
-  something about the site, <a href="<%= help_contact_path %>">contact&nbsp;us</a>.
-</p> -->
+<!-- <h2 id="contact" class="contact">Contact us</h2> 
+<p><a href="<%= help_contact_path %>">Contact/a> -->
+</p> 
 </div>
