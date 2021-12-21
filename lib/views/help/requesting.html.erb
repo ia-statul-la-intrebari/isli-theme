@@ -23,263 +23,163 @@
 
 
 
-    <dt id="missing_body">You're missing the public authority that I want to request from! <a href="#missing_body">#</a> </dt>
+    <dt id="missing_body">Îți lipsește autoritatea publică la care vrei să faci o solicitare!  <a href="#missing_body">#</a> </dt>
 
     <dd>
-      <p>Please <a href="<%= new_change_request_path %>">contact us</a> with the name of the public authority and,
-        if you can find it, their contact email address for Freedom of Information requests.
+      <p>Te rugăm  <a href="<%= new_change_request_path %>">să ne contactezi</a> și să ne transmiți numele autorității publice și, dacă o puteți găsi, îți vom trimite adresa de e-mail pentru solicitările privind libertatea de informare.
       </p>
-      <p>If you'd like to help add a whole category of public authority to the site, we'd love
-        to hear from you too.
+      <p>Dacă doriți să ajutați la adăugarea unei categorii de autoritate publică pe site, ne-ar plăcea să aflăm și noi.
       </p>
 
     </dd>
 
-    <dt id="authorities">Why do you include some authorities that aren't formally subject to FOI?<a href="#authorities">#</a> </dt>
+    <dt id="authorities">De ce includeți unele autorități care nu sunt supuse oficial FOI? <a href="#authorities">#</a> </dt>
 
     <dd>
-      <p><%= site_name %> lets you make requests for information to a range of
-        organisations:</p>
+      <p><%= site_name %> îți permite să faci cereri de informații către o serie de organizații:</p>
 
       <ul>
-        <li> Those formally subject to the FOI Act</li>
-        <li> Those formally subject to the Environmental Regulations (a less well
-          defined group)</li>
-        <li> Those which voluntarily comply with the FOI Act</li>
-        <li> Those which aren't subject to the Act but we think should be, on grounds
-          such as them having significant public responsibilities.
-        </li>
+        <li>Cei supuși în mod oficial Legii FOI</li>
+        <li>Cei supuși în mod oficial reglementărilor de mediu (un grup mai puțin bine definit)</li>
+        <li>Cele care respectă în mod voluntar Legea FOI</li>
+        <li>Cei care nu sunt supuși Legii, dar credem că ar trebui să fie (au responsabilități publice semnificative).</li>
       </ul>
 
-      <p>In the last case, we're using the site to lobby for expansion of the
-        scope of the FOI Act. Even if an organisation is not legally obliged to respond
-        to an FOI request, they can still do so voluntarily.
+      <p>În ultimul caz, folosim site-ul pentru a face lobby pentru extinderea domeniului de aplicare a Legii FOI. Chiar dacă o organizație nu este obligată din punct de vedere legal să răspundă la o solicitare FOI, ea poate face acest lucru în mod voluntar.
       </p>
 
     </dd>
 
-    <dt id="focused">Why must I keep my request focused?<a href="#focused">#</a> </dt>
+    <dt id="focused">De ce trebuie să-mi păstrez succintă cererea? <a href="#focused">#</a> </dt>
 
     <dd>
 
       <p>
-        Please put in your request only what is needed so that someone can
-        easily identify what information you are asking for. Please do
-        <i>not</i> include any of the following:
+        Te rog să introduci în cerere doar ceea ce este necesar, astfel încât cineva să poată identifica cu ușurință ce informații soliciți. Te rugăm <em>să nu incluzi</em> niciunul dintre următoarele:
       </p>
 
       <ul>
-        <li>arguments about your cause</li>
-        <li>statements that could defame or insult others</li>
+        <li>argumente despre problema ta</li>
+        <li>declarații care ar putea defăima sau insulta pe alții</li>
+
       </ul>
 
       <p>
-        If you do, we may have to remove your request to avoid problems with
-        libel law, which is a pain for both you and us. Short, succinct messages
-        make it easier for authorities to be clear what information you are
-        requesting, which means you will get a reply more quickly.
+        Dacă faci acest lucru, este posibil să fim nevoiți să eliminăm solicitarea, pentru a evita problemele cu legea calomniei, ceea ce este ar reprezenta o problema atât pentru tine, cât și pentru noi. Mesajele scurte și succinte le ajută autorităților să înțeleagă ce informații solicitați, ceea ce înseamnă că vei primi un răspuns mai rapid.
       </p>
 
       <p>
-        If you want information to support an argument or campaign, Freedom of
-        Information is a powerful tool. Although you may not use this site to
-        run your campaign, we encourage you to use it to get the information you
-        need. We also encourage to run your campaign elsewhere - one effective
-        and very easy way is to <%= link_to 'start your own blog',
-          "http://wordpress.com/"%>.
+        Dacă vrei informații care să susțină un argument sau o campanie, Libertatea Informației este un instrument puternic. Deși este posibil să nu utilizezi acest site pentru a derula o campanie, te încurajăm să îl utilizezi pentru a obține informațiile de care ai nevoie. De asemenea, te încurajăm să desfășori campania si pe alte canale - o modalitate eficientă și foarte simplă este să deschizi propriul blog. 
         <% if AlaveteliConfiguration::enable_annotations %>
-          You are welcome to link to your campaign from this site in an
-          annotation to your request (you can make annotations after submitting
-          the request).
+          Esti binevenit să faci un link către campania ta de pe acest site, într-o adnotare la solicitarea ta. (poți face adnotări după ce ai trimis solicitarea).
         <% end %>
       </p>
 
     </dd>
 
-    <dt id="fees">Does it cost me anything to make a request?<a href="#fees">#</a> </dt>
+    <dt id="fees">Mă costă ceva să fac o cerere?<a href="#fees">#</a> </dt>
 
     <dd>
 
-      <p>Making an FOI request is nearly always free.</p>
+      <p>Efectuarea unei solicitări FOI este aproape întotdeauna gratuită.</p>
 
-      <p>Authorities often include unnecessary, scary, boilerplate in
-        acknowledgement messages saying they "may" charge a fee. Ignore such notices.
-        They hardly ever will actually charge a fee.  If they do, they can only charge you if
-        you have specifically agreed in advance to pay.  <a
-        href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/practical_application/chargingafee.pdf">More
-        details</a> from the Information Commissioner.
+      <p>Autoritățile includ adesea în mesajele de recunoaștere care nu sunt necesare, înfricoșătoare, care spun că „poate” percepe o taxă. Ignora astfel de notificări. Aproape niciodată nu vor percepe o taxă. Dacă o fac, te pot taxa doar dacă ați convenit în avans în mod expres să plătesti. 
       </p>
-
-      <p>Sometimes an authority will refuse your request, saying that the cost
-        of handling it exceeds £600 (for central government) or £450 (for all other
-        public authorities). At this point you can refine your
-        request. e.g. it would be much cheaper for an authority to tell you the amount
-        spent on marshmallows in the past year than in the past ten years.
-      </p>
-
     </dd>
 
 
 
-    <dt id="quickly_response">How quickly will I get a response? <a href="#quickly_response">#</a> </dt>
+    <dt id="quickly_response">Cât de repede voi primi un răspuns?<a href="#quickly_response">#</a> </dt>
 
     <dd>
-      <p>By law, public authorities must respond <strong>promptly</strong> to
-        requests.
+      <p>Prin lege, autoritățile publice trebuie să răspundă <strong>prompt</strong> solicitărilor.
       </p>
 
-      <p>Even if they are not prompt, in nearly all cases they must respond within
-        20 working days. If you had to clarify your request, or they are a school,
-        or one or two other cases, then they may have more time
-        (<a href="<%= help_officers_path(:anchor => 'days') %>">full details</a>).
+      <p>Chiar dacă nu sunt prompti, în aproape toate cazurile trebuie să răspundă în termen de 10 zile lucrătoare. Dacă a a fost nevoie să-ți clarifici cererea, atunci s-ar putea să aibă nevoie de mai mult timp (dar nu mai mult de 30 de zile).
       </p>
-      <p><%= site_name %> will email you if you don't get a timely response.  You can
-        then send the public authority a message to remind them, and tell them if they
-        are breaking the law.</p>
+      <p><%= site_name %>  iti va trimite un e-mail dacă nu primesți un răspuns în timp util. Apoi poti trimite autorității publice un mesaj pentru a le reaminti și a le spune că încalcă legea.</p>
 
     </dd>
 
-    <dt id="no_response">What if I never get a response?<a href="#no_response">#</a> </dt>
+    <dt id="no_response">Ce se întâmplă dacă nu primesc niciodată un răspuns? <a href="#no_response">#</a> </dt>
 
     <dd>
-      <p>There are several things you can do if you never get a response.</p>
+      <p>Există mai multe lucruri pe care le poți face dacă nu primesti niciodată un răspuns.</p>
       <ul>
-        <li>Sometimes there has been a genuine problem and the authority never
-          received the request. It is worth telephoning the authority and politely
-          checking that they received the request. It was sent to them by email.
-        </li>
-        <li>If they have not received it, the problem is most likely due to
-          "spam filters". Refer the authority to the measures in the answer
-          '<a href="<%= help_officers_path(:anchor => 'spam_problems') %>">I can see a request on <%= site_name %>, but we never got it by email!</a>'
-          in the FOI officers section of this help.
-        </li>
-        <li>If you're still having no luck, then you can ask for an internal review,
-          and then complain to the Information Commissioner about the authority.
-          Read our page '<a href="<%= help_general_path(:template => 'unhappy') %>">Unhappy about the response you got?</a>'.
+<li>Poate ca a existat o problemă reală și autoritatea nu a primit niciodată cererea ta. Merită să suni la autoritatea respectiva și să verifici politicos dacă au primit cererea care le-a fost trimisa pe e-mail.</li>
+<li>Dacă nu au primit-o, problema se datorează cel mai probabil „filtrelor de spam”. Consultați autoritatea la măsurile din răspunsul '<a href="<%= help_officers_path(:anchor => 'spam_problems') %>">Văd o solicitare pe Ia Statul la Întrebări, dar nu am primit-o niciodată prin e-mail!'</a>. în secțiunea ofițeri FOI din acest ajutor.</li>
+<li>Dacă tot nu ai noroc, atunci poți cere o revizuire internă și apoi să te plângi comisarului pentru informații cu privire la autoritate. Citeste pagina noastră '<a href="<%= help_general_path(:template => 'unhappy') %>">Nemulțumit de răspunsul pe care l-ați primit?'</a>.</li>
+
       </ul>
     </dd>
 
-    <dt id="not_satifised">What if I'm not satisfied with the response? <a href="#not_satifised">#</a> </dt>
-    <dd>If you didn't get the information you asked for, or you didn't get it in time,
-      then read our page '<a href="<%= help_general_path(:template => 'unhappy') %>">Unhappy about the response you got?</a>'.
+    <dt id="not_satifised">Ce se întâmplă dacă nu sunt mulțumit de răspuns?  <a href="#not_satifised">#</a> </dt>
+    <dd>Dacă nu ai primit informațiile solicitate sau nu le-ai primit la timp, atunci citiți pagina noastră '<a href="<%= help_general_path(:template => 'unhappy') %>">Nemulțumit de răspunsul pe care l-ați primit?</a>'.
     </dd>
 
-    <dt id="reuse">It says I can't re-use the information I got!<a href="#reuse">#</a> </dt>
+    <dt id="reuse">Se spune că nu pot reutiliza informațiile pe care le-am primit!  <a href="#reuse">#</a> </dt>
     <dd>
-      <p>Authorities often add legal boilerplate about the
-        "<a href="http://www.opsi.gov.uk/si/si2005/20051515">Re-Use of Public Sector
-          Information Regulations 2005</a>", which at first glance implies you may not
-        be able do anything with the information.
+      <p>Autoritățile adaugă adesea o serie de reguli legale despre „Reutilizarea regulamentelor din 2005 privind informațiile din sectorul public”, ceea ce, la prima vedere, implică faptul că este posibil să nu puteți face nimic cu informațiile.
       </p>
 
-      <p>You can, of course, write articles about the information or summarise it, or
-        quote parts of it. We also think you should feel free to republish the
-        information in full, just as we do, even though in theory you might not be
-        allowed to do so.  See <a href="<%= help_officers_path(:anchor => 'copyright') %>">our policy on copyright</a>.</p>
-
+      <p>Poți, desigur, să scrii articole despre informații primate, să le rezumi sau să citezi părți din ea. De asemenea, credem că ar trebui să te simțiți liber să poti republica informațiile în întregime, la fel ca și noi, chiar dacă, teoretic, s-ar putea să nu ai voie să faci acest lucru. Consultați  <a href="<%= help_officers_path(:anchor => 'copyright') %>">politica noastră privind drepturile de autor</a>.</p>
     </dd>
 
-    <dt id="ico_help">Can you tell me more of the nitty gritty about the process of making requests? <a href="#ico_help">#</a> </dt>
+    <dt id="data_protection">Pot solicita informații despre mine? ? <a href="#data_protection">#</a> </dt>
 
     <dd>
-      <p>Have a look at the
-        <a href="http://www.ico.gov.uk/for_the_public/access_to_official_information.aspx">access to official information</a>
-        pages on the Information Commissioner's website.</p>
+      <p>Nu. Solicitările făcute folosind  <%= site_name %> sunt publice, făcute în baza Legii privind libertatea de informare și nu te pot ajuta să găsesti informații despre o persoană privată.</p>
 
-      <p>If you're requesting information from a Scottish public authority,
-        the process is very similar. There are differences around time
-        limits for compliance.
-        See the <a href="http://www.itspublicknowledge.info/nmsruntime/saveasdialog.asp?lID=1858&amp;sID=321">Scottish
-          Information Commissioner's guidance</a> for details.</p>
+      <p>Dacă vrei să afli ce informații deține o autoritate publică despre tine, ar trebui să faci o „Solicitare de acces la subiect” în privat, folosind legea privind protecția datelor. </p>
+
+      <p>Dacă vezi că cineva a inclus informații personale, poate fără să vrea, într-o solicitare, te rugăm să ne   <a href="<%= help_contact_path %>">contactezi imediat</a>
+        pentru a le putea elimina.</p>
     </dd>
 
-    <dt id="data_protection">Can I request information about myself? <a href="#data_protection">#</a> </dt>
+    <dt id="private_requests">Aș dori să-mi păstrez cererea secretă! (Cel puțin până când îmi public povestea)  <a href="#private_requests">#</a> </dt>
+
+    <dd><p><%= site_name %> este în prezent concepută doar pentru solicitări publice. Toate răspunsurile pe care le primim sunt publicate automat pe site, pentru ca oricine să le poată citi.</p>
+      <p>Ar trebui să contactezi direct autoritatea publică dacă doresti să faci o solicitare în privat. 
+      </p>
+    </dd>
+
+    <dt id="eir">De ce pot solicita doar informații despre mediu de la unele autorități?  <a href="#eir">#</a> </dt>
 
     <dd>
-      <p>No. Requests made using <%= site_name %> are public, made under the Freedom of
-        Information Act, and cannot help you find information about a private
-        individual.</p>
+      <p>Unele autorități publice nu intră sub incidența Legii privind libertatea de informare, dar intră sub incidența unei alte legi numite Regulamente privind informațiile de mediu (EIR).
+      </p>
 
-      <p>If you would like to know what information a public
-        authority holds about yourself, you should make a "Subject Access Request" in
-        private using Data Protection law.  The leaflet "<a
-        href="http://www.ico.gov.uk/upload/documents/library/data_protection/introductory/subject_access_rights.pdf">How to access your information</a>" (on the Information Commissioner's
-        website) explains how to do this.</p>
+      <p>Este o lege foarte asemănătoare, așa că poti faci o cerere folosind Ia Statul la Întrebări în același mod ca și o solicitare FOI. Singura diferenta este ca pe pagina in care iti scrii cererea iti aminteste ca poti solicita doar „informatii de mediu” si iti spune ce inseamna asta. 
+      </p>
 
-      <p>If you see that somebody has included personal information, perhaps
-        unwittingly, in a request, please <a href="<%= help_contact_path %>">contact us</a>
-        immediately so we can remove it.</p>
-    </dd>
-
-
-    <dt id="private_requests">I'd like to keep my request secret! (At least until I publish my story) <a href="#private_requests">#</a> </dt>
-
-    <dd><p><%= site_name %> is currently only designed for public requests. All
-        responses that we receive are automatically published on the website for anyone
-        to read.  </p>
-      <p>You should contact the public authority directly if you would like to
-        make a request in private.  If you're interested in buying a system which helps
-        you manage FOI requests in secret, then <a href="<%= help_contact_path %>">contact us</a>.
+      <p>Desigur, poți solicita informații de mediu de la alte autorități. Doar faceți o solicitare pentru libertatea de informare (FOI) în mod normal. Autoritatea are datoria să stabilească dacă Regulamentul privind informațiile de mediu (EIR) este legislația mai potrivită pentru a răspunde.
       </p>
     </dd>
 
-    <dt id="eir">Why can I only request information about the environment from some authorities? <a href="#eir">#</a> </dt>
+    <dt id="multiple">Pot trimite aceeași solicitare mai multor autorități? <a href="#multiple">#</a> </dt>
 
-    <dd>
-      <p>Some public authorities, such as <a href="https://www.whatdotheyknow.com/body/south_east_water">South East Water</a>,
-        don't come under the Freedom of Information Act, but do come under another law called
-        the Environmental Information Regulations (EIR).
-      </p>
-
-      <p>It's a very similar law, so you make a request
-        to them using <%= site_name %> in just the same way as an FOI request. The only
-        difference is that on the page where you write your request, it reminds you
-        that you can only request "environmental information" and tells you what that
-        means. It is quite broad.
-      </p>
-
-      <p>You can, of course, request environmental information from other
-        authorities. Just make a Freedom of Information (FOI) request as normal. The
-        authority has a duty to work out if the Environmental Information Regulations
-        (EIR) is the more appropriate legislation to reply under.
-      </p>
-    </dd>
-
-    <dt id="multiple">Can I make the same to request to lots of authorities, e.g. all councils? <a href="#multiple">#</a> </dt>
-
-    <dd>We ask you to first send a test version of your request to a few
-      authorities. Their responses will help you improve the wording of your request,
-      so that you get the best information when you send the request to all of
-      the authorities. There is currently no automated system for sending the request
-      to the other authorities, you must copy and paste it by hand.
+    <dd>Te rugăm să trimiți mai întâi o versiune de testare a solicitării tale către câteva autorități. Răspunsurile lor te vor ajuta să îmbunătățesti formularea cererii, astfel încât să obții cele mai bune informații atunci când trimiți cererea către toate autoritățile. Momentan nu există un sistem automat de trimitere a cererii către celelalte autorități, trebuie să o copiezi și să o inserezi manual.
 
     </dd>
 
-    <dt id="offsite">I made a request off the site, how do I upload it to the archive?<a href="#offsite">#</a> </dt>
+    <dt id="offsite">Am făcut o solicitare în afara site-ului, cum o încarc în arhivă?<a href="#offsite">#</a> </dt>
 
-    <dd><%= site_name %> is an archive of requests made through the site,
-      and does not try to be an archive of all FOI requests. We'll never support uploading
-      other requests. For one thing, we wouldn't be able to verify that other
-      responses actually came from the authority. If this really matters to you,
-      you can always make the same request again via <%= site_name %>.
+    <dd><%= site_name %> este o arhivă a solicitărilor făcute prin intermediul site-ului și nu încearcă să fie o arhivă a tuturor solicitărilor FOI. Nu vom accepta niciodată încărcarea altor solicitări. În primul rând, nu am putea verifica dacă alte răspunsuri au venit de fapt de la autoritate. Dacă acest lucru contează cu adevărat pentru dvs., puteți oricând să faceți din nou aceeași cerere prin <%= site_name %>.
     </dd>
 
     <% if AlaveteliConfiguration::enable_annotations %>
-      <dt id="moderation">How do you moderate request annotations? <a href="#moderation">#</a> </dt>
+      <dt id="moderation">Cum moderați adnotările solicitărilor? <a href="#moderation">#</a> </dt>
 
       <dd>
-        <p>Annotations on <%= site_name %> are to help
-          people get the information they want, or to give them pointers to places they
-          can go to help them act on it. We reserve the right to remove anything else.
+        <p>Adnotările de pe  <%= site_name %>   sunt pentru a ajuta oamenii să obțină informațiile pe care le doresc sau pentru a le oferi indicații către locurile în care pot merge pentru a-i ajuta să acționeze în conformitate cu acestea. Ne rezervăm dreptul de a elimina orice altceva.
         </p>
-        <p>Endless, political discussions are not allowed.
-          Post a link to a suitable forum or campaign site elsewhere.</p>
+        <p>Discuțiile politice nesfârșite nu sunt permise. Postați un link către un forum adecvat sau un site de campanie în altă parte.</p>
       </dd>
     <% end %>
 
   </dl>
 
-  <p><strong>Next</strong>, read about <a href="<%= help_privacy_path %>">your privacy</a> --&gt;
+  <p><strong>&rarr;</strong> Citiți despre  <a href="<%= help_privacy_path %>">confidențialitatea dvs.</a> --&gt;
 
     <div id="hash_link_padding"></div>
 </div>
