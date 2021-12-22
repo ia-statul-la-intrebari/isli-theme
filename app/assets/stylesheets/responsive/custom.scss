@@ -965,10 +965,11 @@ dt {
     background: linear-gradient(lightyellow, transparent)
 }
 
-#fp-partners-logos, 
-#project-banner {
-  // display: flex;
-  // justify-content: space-between;
+// #project-banner ,
+#fp-partners-logos 
+{
+  display: flex;
+  justify-content: space-between;
   padding: 1ex 0;
 }
 #sponsor img {
