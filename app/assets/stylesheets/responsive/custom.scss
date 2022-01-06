@@ -598,6 +598,7 @@ p.locale-list-trigger {
 }
 
 .footer__about {
+  text-align: center;
   h2 {
     /* color: $color_white; */
   }
@@ -990,7 +991,7 @@ width: 100%; margin: 0 auto;
 #project-banner h5#proj-tagline{
   font-size: 1.15em;
   font-weight: normal;
-  color: $color_black;
+  color: #99bebe;
 }
 #project-banner #sponsor + div {
     padding: 1ex 0;
@@ -1000,7 +1001,6 @@ width: 100%; margin: 0 auto;
   color: $color_blue;
 }
 #front-partners h5 {
-  
   color: $color_green;
   font-size: 1.1em;
   font-weight: normal;
