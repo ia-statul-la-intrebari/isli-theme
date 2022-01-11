@@ -974,8 +974,8 @@ dt {
   padding: 1ex 0;
 }
 #sponsor img {
-  margin-top: 1ex;
-  margin-bottom: -1ex;
+  margin-top: 1.5ex;
+  margin-bottom: -2ex;
   max-height: 75px;
 }
 #project-banner  { 
@@ -997,6 +997,7 @@ width: 100%; margin: 0 auto;
 }
 #project-banner #sponsor + div {
     padding: 1ex 0;
+    margin-right: -2ex;
     text-align: right;
 }
 
