@@ -974,6 +974,8 @@ dt {
   padding: 1ex 0;
 }
 #sponsor img {
+  margin-top: 1ex;
+  margin-bottom: -1ex;
   max-height: 75px;
 }
 #project-banner  { 
@@ -985,7 +987,7 @@ width: 100%; margin: 0 auto;
     margin: 0;
 }
 #project-banner h3#proj-title{
-  font-size: 1.35em;
+  font-size: 1.3em;
   color: $color_green;
 }
 #project-banner h5#proj-tagline{
@@ -995,6 +997,7 @@ width: 100%; margin: 0 auto;
 }
 #project-banner #sponsor + div {
     padding: 1ex 0;
+    text-align: right;
 }
 
 #banner_content a {
